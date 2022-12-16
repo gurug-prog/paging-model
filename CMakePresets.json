@@ -12,7 +12,7 @@
       "name":"debug",
       "cacheVariables":{
         "CMAKE_C_COMPILER":"gcc",
-        "CMAKE_C_FLAGS":"-g -fsanitize=address -Wall -Wextra"
+        "CMAKE_C_FLAGS":"-g -Wall -Wextra"
       }
     },
     {

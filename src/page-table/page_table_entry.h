@@ -12,7 +12,8 @@ struct PageTableEntry
     bool modification;
 };
 
-void    PageTableEntry_init         (PageTableEntry* self);
-void    PageTableEntry_initDefault  (PageTableEntry* self);
+PageTableEntry* PageTableEntry_init         ();
+PageTableEntry* PageTableEntry_initDefault  ();
+void    PageTableEntry_free (PageTableEntry* self);
 
 #endif // PAGE_TABLE_ENTRY_H

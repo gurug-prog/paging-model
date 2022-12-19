@@ -1,15 +1,23 @@
 #include "page_table_entry.h"
 
-void PageTableEntry_init(PageTableEntry* self)
+PageTableEntry* PageTableEntry_init()
 {
-    // TODO: implement
-    self = self;
-    // (void*)self;
+    PageTableEntry* self = malloc(sizeof(PageTableEntry));
+
+    return self;
 }
 
-void PageTableEntry_initDefault(PageTableEntry* self)
+PageTableEntry* PageTableEntry_initDefault()
 {
+    PageTableEntry* self = malloc(sizeof(PageTableEntry));
     self->presence = false;
     self->reference = false;
     self->modification = false;
+
+    return self;
+}
+
+void PageTableEntry_free(PageTableEntry* self)
+{
+    free(self);
 }

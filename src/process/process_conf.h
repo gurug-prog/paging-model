@@ -1,3 +1,6 @@
+#ifndef PROCESS_CONF_H
+#define PROCESS_CONF_H
+
 #define PROCESS_MIN_VAS_SIZE    1
 #define PROCESS_MAX_VAS_SIZE    1024
 
@@ -6,3 +9,6 @@
 
 #define PROCESS_MIN_WS_LIFETIME 8
 #define PROCESS_MAX_WS_LIFETIME 128
+
+
+#endif // PROCESS_CONF_H

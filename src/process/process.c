@@ -97,7 +97,7 @@ static void Process_accessWorkingSet(Process* self)
 static void Process_accessAny(Process* self)
 {
     bool accessType = GEN_VALUE(false, true);
-    int pageIndex = GEN_VALUE(0, self->workingSet->size - 1);
+    int pageIndex = GEN_VALUE(0, self->pageTable->size - 1);
     PageTableEntry* page = self->pageTable->pageEntries[pageIndex];
 
     printf("ANY: ");

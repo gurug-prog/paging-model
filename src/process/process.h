@@ -17,6 +17,6 @@ struct Process
 Process*    Process_init                ();
 Process*    Process_initRandomized      ();
 void        Process_free                (Process* self);
-
+void        Process_run                 (Process* self);
 
 #endif // PROCESS_H
